@@ -1,7 +1,4 @@
-### README.md
-
-```markdown
-# Stock Dividend Info Fetcher
+### Stock Dividend Info Fetcher
 
 This Python script fetches stock information for a list of tickers provided in a CSV file, including the following details:
 
