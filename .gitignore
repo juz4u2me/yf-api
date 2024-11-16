@@ -1,0 +1,33 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# IDE specific files (e.g., VSCode, PyCharm)
+.vscode/
+.idea/
+
+# CSV output files
+stock_dividend_info.csv
+
+# Logs and database files
+*.log
+*.sqlite3
+
+# MacOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+
+# Environment variables
+.env
