@@ -46,7 +46,7 @@ def fetch_stock_data(ticker):
         
         return {
             'Name': name,
-            'Ticker': ticker,
+            'Ticker': ticker.replace('.SI', ''),
             'Last Close Price': last_close_price,
             'Upcoming Dividend Amount': round(upcoming_dividend, 3) if isinstance(upcoming_dividend, (int, float)) else upcoming_dividend,
             'Upcoming Dividend Date': upcoming_dividend_date
@@ -55,7 +55,7 @@ def fetch_stock_data(ticker):
         print(f"Error fetching data for {ticker}: {e}")
         return {
             'Name': 'Error',
-            'Ticker': ticker,
+            'Ticker': ticker.replace('.SI', ''),
             'Last Close Price': 'Error',
             'Upcoming Dividend Amount': 'Error',
             'Upcoming Dividend Date': 'Error'
